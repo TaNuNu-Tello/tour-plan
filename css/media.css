@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+  .container {
+    min-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    min-width: 700px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 576px;
+    width: 92%;
+  }
+}
+/*# sourceMappingURL=media.css.map */
