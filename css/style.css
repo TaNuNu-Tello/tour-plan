@@ -579,14 +579,19 @@ template {
   border-radius: 4px;
 }
 
-.rating-text {
+.rating__text {
   font-size: 8px;
   line-height: 10px;
 }
 
-.rating-counter {
+.rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-shot {
+  font-size: 10px;
+  margin-left: 0.5px;
 }
 
 @media (max-width: 1200px) {
@@ -705,6 +710,19 @@ template {
   }
   .container {
     width: 88%;
+  }
+  .hotel {
+    padding-top: 0;
+  }
+  .hotel:out-of-range {
+    padding: 4px 9px;
+  }
+  .hotel-name {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .stars {
+    padding-right: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
