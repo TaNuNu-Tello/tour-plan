@@ -631,6 +631,12 @@ template {
   .user {
     margin-left: 27px;
   }
+  .hotel {
+    padding-top: 12px;
+  }
+  .hotel-info__offer {
+    margin-left: 21px;
+  }
 }
 
 @media (max-width: 765px) {
