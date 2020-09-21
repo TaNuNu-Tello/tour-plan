@@ -8,5 +8,10 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
-  effect: "coverflow",
+});
+var mySwiper = new Swiper(".swiper-container", {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
