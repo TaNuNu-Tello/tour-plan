@@ -8,8 +8,7 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
-});
-var mySwiper = new Swiper(".swiper-container", {
+  //Управление стрелками клавиатуры
   keyboard: {
     enabled: true,
     onlyInViewport: false,
