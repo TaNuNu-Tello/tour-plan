@@ -1,0 +1,97 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .logo
+    width: 132px
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin-left: auto      
+    &-menu
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+    &__button
+      border-radius: 0 6px 6px 0
+  .user
+    margin-left: 27px
+  .hotel
+    padding-top: 12px
+    &-info__offer
+      margin-left: 16px
+
+@media (max-width: 765px)
+  .container
+    max-width: 576px
+    width: 92%
+  .navbar
+    &__search, &-menu, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  
+    
+  .stars
+    flex-basis: auto
+  .hotel
+    
+    &-name
+      flex-basis: 100%
+      
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+
+@media ( max-width: 576px )
+  .logo
+    width: 99px
+@media ( max-width: 320px ) 
+  .navbar
+    &-top
+      padding-top: 23px     
+  .container
+    width: 88%   
+  .hotel
+    padding-top: 0
+    &:out-of-range
+      padding: 4px 9px
+    &-name
+      font-size: 24px
+      line-height: 30px
+  .stars 
+    padding-right: 16px
+  
