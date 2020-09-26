@@ -1023,7 +1023,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 16px;
+    min-width: 16px;
     height: 11px;
     padding: 0;
     -webkit-box-align: center;
@@ -1082,7 +1082,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+    min-height: 402px;
   }
   .booking {
     width: 100%;
@@ -1115,6 +1115,9 @@ template {
     margin-bottom: 20px;
     height: 179px;
     margin-top: 27px;
+  }
+  -right {
+    min-height: 402px;
   }
   .newsletter {
     padding: 76px 0 83 px 0;
@@ -1160,6 +1163,9 @@ template {
   }
   .map__frame {
     min-height: 172px;
+  }
+  .newsletter {
+    min-height: 319px;
   }
   .newsletter-title__strong {
     font-style: normal;
