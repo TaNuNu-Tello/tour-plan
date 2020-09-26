@@ -934,6 +934,9 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .newsletter {
+    padding: 72px 0 87px 0;
+  }
   .logo {
     width: 132px;
   }
@@ -945,8 +948,10 @@ template {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
+    padding-top: 21px;
     padding-bottom: 22px;
+    max-width: 673px;
+    margin: auto;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -963,6 +968,7 @@ template {
   }
   .hotel {
     padding-top: 12px;
+    padding-bottom: 58px;
   }
   .hotel-info__offer {
     margin-left: 16px;
@@ -1097,6 +1103,15 @@ template {
     height: 179px;
     margin-top: 27px;
   }
+  .newsletter {
+    padding: 76px 0 83 px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 280px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1122,6 +1137,9 @@ template {
   .slider-hotel__slider {
     height: 179px;
     margin-top: 27px;
+  }
+  .subscribe {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
