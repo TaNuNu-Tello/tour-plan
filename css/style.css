@@ -935,7 +935,10 @@ template {
     max-width: 700px;
   }
   .newsletter {
-    padding: 72px 0 87px 0;
+    padding: 71px 0 87px 0;
+  }
+  .rating {
+    margin-bottom: -12px;
   }
   .logo {
     width: 132px;
@@ -968,7 +971,7 @@ template {
   }
   .hotel {
     padding-top: 12px;
-    padding-bottom: 58px;
+    padding-bottom: 57px;
   }
   .hotel-info__offer {
     margin-left: 16px;
@@ -981,6 +984,7 @@ template {
   }
   .hotel__slider {
     margin-bottom: 30px;
+    margin-top: 11px;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
@@ -988,8 +992,16 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hotel-info__description {
+    margin: 0 0;
+  }
   .booking {
     width: 340px;
+    padding: 23px;
+    padding-top: 31px;
+  }
+  .booking__per-room {
+    margin-top: -4px;
   }
   .slider {
     width: 100%;
