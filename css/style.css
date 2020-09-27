@@ -1345,6 +1345,7 @@ template {
   .newsletter {
     min-height: 319px;
     padding: 70px 0 0px 0;
+    margin-top: 30px;
   }
   .newsletter-title__strong {
     font-style: normal;
@@ -1379,7 +1380,7 @@ template {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
-  .reviews--next {
+  .reviews-slider__button--next {
     right: 50%;
     margin-right: -91px;
     -webkit-transform: translate(50%, 0);
