@@ -142,6 +142,7 @@
     width: 100%
     height: 100%
   .newsletter
+    padding: 29px 0 35px 0
     &-wrapper
       max-width: 576px
       width: 92%
@@ -154,9 +155,7 @@
         &::before, &::after
           display: none
       &__button
-        top: 30px
-        
-         
+        top: 30px       
         &--prev
           left: 50%
           margin-left: -65px
@@ -174,10 +173,10 @@
       margin-bottom: 20px
       height: 179px
       margin-top: 27px
-    &-slider
-      height: 250px
-  &-right
-    min-height: 402px
+    //&-slider
+      //height: 250px
+    &-right
+      min-height: 402px
   .newsletter
     padding: 76px 0 83 px 0
     &__title
@@ -192,7 +191,7 @@
     width: 88%   
   .hotel
     padding-top: 0
-    padding-bottom: 43px
+    padding-bottom: 12px
     &-info
       &__description
         margin: 0 0 
@@ -215,6 +214,7 @@
       min-height: 172px
   .newsletter
     min-height: 319px
+    padding: 70px 0 0px 0
     &-title
       &__strong
         font-style: normal
@@ -231,3 +231,24 @@
       padding-left: 10px
     &__subscribe
       margin-left: 8px
+  .reviews
+    padding: 34px 0 50px 0
+    &__title
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 42px
+      margin-top: 7px
+    &-slider
+      &__button
+        &--prev
+          left: 50%
+          margin-left: -91px
+          transform: translate(-50%, 0)
+    &--next
+      right: 50%
+      margin-right: -91px
+      transform: translate(50%, 0) 
+    &-slider
+      &__item
+        max-width: 281px
+        padding: 0 20px 20px
