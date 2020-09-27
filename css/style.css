@@ -590,6 +590,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 3px;
 }
 
 .hotel-slider__item {
@@ -916,7 +917,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 
 .reviews__title {
@@ -1017,7 +1018,7 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: -2px;
 }
 
 .reviews-slider__username {
