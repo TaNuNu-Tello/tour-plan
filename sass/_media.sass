@@ -184,8 +184,6 @@
   .subscribe
     width: 280px
 @media ( max-width: 320px ) 
-  .parallax-window 
-    min-height: 319px
   .navbar
     &-top
       padding-top: 23px     
@@ -217,6 +215,7 @@
   .newsletter
     min-height: 319px
     padding: 70px 0 0px 0
+    margin-top: 30px
     &-title
       &__strong
         font-style: normal
@@ -244,13 +243,16 @@
       &__button
         &--prev
           left: 50%
-          margin-left: -91px
+          margin-left: -88px
           transform: translate(-50%, 0)
-    &--next
-      right: 50%
-      margin-right: -91px
-      transform: translate(50%, 0) 
-    &-slider
+          margin-top: 0
+
+        &--next
+          right: 50%
+          margin-right: -88px
+          transform: translate(50%, 0)
+          margin-top: 0
+    
       &__item
         max-width: 281px
         padding: 0 20px 20px
