@@ -30,3 +30,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+$(".parallax-window").parallax({ imageSrc: "../img/newletter-bg.jpeg" });
+$(".parallax-window").parallax({
+  naturalWidth: 600,
+  naturalHeight: 400,
+});
