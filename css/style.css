@@ -989,12 +989,14 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 17px;
+  margin-top: -21px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 17px;
+  margin-top: -21px;
 }
 
 .reviews-slider__profile {
@@ -1376,15 +1378,17 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -91px;
+    margin-left: -88px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+    margin-top: 0;
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -91px;
+    margin-right: -88px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+    margin-top: 0;
   }
   .reviews-slider__item {
     max-width: 281px;
