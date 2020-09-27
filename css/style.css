@@ -844,7 +844,7 @@ template {
   background-image: url(../img/newletter-bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  block-size: cover;
+  background-size: cover;
 }
 
 .newsletter::before {
