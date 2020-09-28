@@ -10,6 +10,10 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .activities
+    &__card
+      width: 24%
+      height: 255px
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -87,7 +91,17 @@
       font-size: 31px
       line-height: 47px
       margin-bottom: 45px
-      
+  .activities
+    padding-bottom: 60px
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+    &__card
+      width: 339px
+      height: 255px 
+    &__title
+      margin-top: -7px 
 @media (max-width: 765px)
   .container
     max-width: 576px
@@ -161,11 +175,21 @@
         max-width: 468px
         &::before, &::after
           display: none
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__card
+      width: 49%
+      height: 255px
 @media (max-width: 594px)           
   .reviews
     &-slider
       &__item
         max-width: 468px
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
          
 @media ( max-width: 576px )
   .logo
@@ -215,7 +239,8 @@
           margin-right: -88px
           transform: translate(50%, 0)
           margin-top: 0
-      
+  .card
+    width: 100%   
 @media ( max-width: 320px ) 
   .parallax-window 
     min-height: 319px
@@ -272,7 +297,8 @@
       padding: 17px
 
   .reviews
-    padding: 34px 0 50px 0
+    padding-top: 0px
+    margin-top: -4px
     &__title
       font-size: 20px
       line-height: 23px
@@ -299,3 +325,14 @@
       &__item
         max-width: 281px
         padding: 0 20px 20px
+  .activities
+    padding-top: 0px
+    margin-top: -21px
+    &__title
+      margin-bottom: 36px
+    &__card
+      width: 280px
+      height: 255px
+    div:nth-child(3)
+      margin-top: 8px
+      margin-bottom: 19px

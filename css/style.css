@@ -1076,7 +1076,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 22px 0 98px 0;
 }
 
 .activities__title {
@@ -1136,6 +1136,7 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
+  width: 100%;
   height: 100%;
 }
 
@@ -1174,6 +1175,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .activities__card {
+    width: 24%;
+    height: 255px;
   }
 }
 
@@ -1278,6 +1283,23 @@ template {
     line-height: 47px;
     margin-bottom: 45px;
   }
+  .activities {
+    padding-bottom: 60px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities__card {
+    width: 339px;
+    height: 255px;
+  }
+  .activities__title {
+    margin-top: -7px;
+  }
 }
 
 @media (max-width: 765px) {
@@ -1381,11 +1403,23 @@ template {
   .reviews-slider__item::before, .reviews-slider__item::after {
     display: none;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities__card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 594px) {
   .reviews-slider__item {
     max-width: 468px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -1443,6 +1477,9 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-top: 0;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -1510,7 +1547,8 @@ template {
     padding: 17px;
   }
   .reviews {
-    padding: 34px 0 50px 0;
+    padding-top: 0px;
+    margin-top: -4px;
   }
   .reviews__title {
     font-size: 20px;
@@ -1541,6 +1579,21 @@ template {
   .reviews-slider__item {
     max-width: 281px;
     padding: 0 20px 20px;
+  }
+  .activities {
+    padding-top: 0px;
+    margin-top: -21px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+  }
+  .activities__card {
+    width: 280px;
+    height: 255px;
+  }
+  .activities div:nth-child(3) {
+    margin-top: 8px;
+    margin-bottom: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */
