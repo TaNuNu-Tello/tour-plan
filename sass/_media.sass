@@ -200,8 +200,19 @@
       margin-left: 0px
   .activities
     padding-top: 20px 
-  
-    
+  .footer
+   
+    &__social
+      &-network
+        margin-top: -22px
+    &__additional
+      margin-left: -22px
+      margin-right: -20px
+    &__title
+      &--mb-6
+        margin-top: 5px
+        margin-left: 3px
+        margin-right: -6px
 @media (max-width: 765px)
   .container
     max-width: 576px
@@ -275,11 +286,16 @@
         &::before, &::after
           display: none
   .activities
+
     padding-top: 40px
     padding-bottom: 60px
     &__card
       width: 49%
       height: 255px
+  .footer
+    &__additional
+      margin-left: 0
+
 @media (max-width: 594px)           
   .reviews
     &-slider
@@ -496,10 +512,11 @@
       margin-top: 10px
     &__title
       &--inline
-        margin-top: 9px
+        margin-top: 12px
         margin-left: -5px
         margin-bottom: 19px
-        
+      &--mb-6
+        margin-top: 3px  
     &__ul
       margin-left: 3px
       
