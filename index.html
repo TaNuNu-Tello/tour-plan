@@ -11,9 +11,14 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -23,7 +28,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -33,7 +41,7 @@
               <img src="/img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
             <img
               src="/img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -55,6 +63,35 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile_visible"
+              >
+                <img
+                  src="/img/user-avatar.jpg"
+                  alt="avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+              <!-- /.user -->
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="/img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="" class="navbar-menu__link">All Deals</a>
             </li>
@@ -443,11 +480,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a class="logo footer__logo" href="#"
+            ><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan"
+          /></a>
+
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -507,13 +543,25 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link">
+              <a
+                href="https://ru-ru.facebook.com/"
+                class="footer__link"
+                target="_blank"
+              >
                 <img src="/img/facebook.svg" alt="Icon: facebook" class=""
               /></a>
-              <a href="#" class="footer__link">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="_blank"
+              >
                 <img src="/img/youtube.svg" alt="Icon:youtube" class=""
               /></a>
-              <a href="#" class="footer__link">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__link"
+                target="_blank"
+              >
                 <img src="/img/instagram.svg" alt="Icon:instagram" class=""
               /></a>
             </div>
@@ -556,17 +604,38 @@
                 States
               </li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/phone.svg"
-                    alt="icon:phone"
-                  />
-                </div>
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52&NoBreak;-56-61-38 (08:00 am
-                – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <ul class="footer__item--mb-2">
+                  <li class="footer__icon-wrapper footer__icon-wrapper--list">
+                    <img
+                      class="footer__icon-list-img"
+                      src="img/phone.svg"
+                      alt="icon:phone"
+                    />
+
+                    Tel (business hours) :<a
+                      class="footer__icon-wrapper--a-list"
+                      href="tel:269 1500"
+                    >
+                      269 1500</a
+                    >
+                  </li>
+                  <li class="footer__icon-wrapper footer__icon-wrapper--list23">
+                    Tel (hotline) Monday - Saturday:<a
+                      class="footer__icon-wrapper--a-list"
+                      href="tel:52-56-61-38"
+                    >
+                      52&NoBreak;-56-61-38 </a
+                    >(08:00 am – 20:00 pm)
+                  </li>
+                  <li class="footer__icon-wrapper footer__icon-wrapper--list">
+                    Tel (hotline) Sunday:<a
+                      class="footer__icon-wrapper--a-list"
+                      href="tel:52-56-61-38"
+                    >
+                      52-56-61-38 </a
+                    >(08:00 am – 14:00 pm)
+                  </li>
+                </ul>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -576,8 +645,9 @@
                     alt="icon:email"
                   />
                 </div>
-
-                <span class="footer__icon-mb">cherly.lawson@example.com</span>
+                <a class="footer__icon-mb" href="mailto:example@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -602,7 +672,8 @@
                 rows="10"
                 placeholder="Message"
               ></textarea>
-              <button class="button footer__button" type="sumbit">Send</button>
+
+              <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -610,16 +681,24 @@
 
           <div class="footer__conditions">
             <div class="footer__conditions footer__conditions-disclaimers">
-              <div class="footer__conditions footer__conditions-disclaimer">
-                Disclaimer
-              </div>
+              <a
+                class="footer__conditions footer__conditions-disclaimer"
+                href="#"
+                >Disclaimer</a
+              >
 
-              <div class="footer__conditions footer__conditions-condition">
+              <a
+                class="footer__conditions footer__conditions-disclaimer"
+                href="#"
+              >
                 Conditions of use
-              </div>
-              <div class="footer__conditions footer__conditionss-policy">
+              </a>
+              <a
+                class="footer__conditions footer__conditions-disclaimer"
+                href="#"
+              >
                 Cancellation policy
-              </div>
+              </a>
             </div>
             <div>
               <img

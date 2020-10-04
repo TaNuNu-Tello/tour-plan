@@ -35,3 +35,10 @@ $(".parallax-window").parallax({
   naturalWidth: 600,
   naturalHeight: 400,
 });*/
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
