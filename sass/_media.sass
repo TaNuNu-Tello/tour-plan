@@ -248,6 +248,9 @@
     &__user
       flex-direction: column
       justify-content: center
+      &--mobile
+        &--visible
+          margin-left: 0
     &__search
       &--mobile
         &--visible
@@ -259,7 +262,8 @@
       right: 0
       bottom: 0
       top: 78px
-      padding-top: 30px
+      padding-top: 30px 
+      overflow-y: scroll
       &--visible
         display: block
     &-top
