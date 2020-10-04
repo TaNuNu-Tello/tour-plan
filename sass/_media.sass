@@ -54,6 +54,8 @@
   .hotel
     padding-top: 12px
     padding-bottom: 57px
+    &-wrapper
+      margin-bottom: 0
     &-info
       &__offer
         margin-left: 16px
@@ -126,6 +128,7 @@
       flex-basis: 47%
     &__message
       flex-basis: 100%
+      margin-bottom: 20px
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -145,6 +148,7 @@
         grid-column: span 4
         align-self: center
         margin-top: -19px
+        
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -153,6 +157,7 @@
       grid-column: span 2
       margin-left: 56px
       margin-right: 13px
+      margin-top: -2px
     &__additional
       grid-column: span 2
       margin-left: -23px
@@ -204,16 +209,19 @@
    
     &__social
       &-network
-        margin-top: -22px
+        margin-top: -27px
     &__additional
       margin-left: -22px
       margin-right: -20px
     &__title
       &--mb-6
-        margin-top: 5px
+        margin-top: 3px
         margin-left: 3px
         margin-right: -6px
-
+      &--mb-5
+        margin-top: 10px
+    &__text
+      margin-top: 19px
   
 @media (max-width: 765px)
   .container
@@ -295,6 +303,7 @@
       
     &-wrapper
       justify-content: space-between
+      
     &-info
       &__text
         width: 100%
@@ -308,7 +317,7 @@
         margin-left: 0
       &-right
         flex-direction: column
-        min-height: 402px
+        max-height: 402px
       &-slider
         height: 350px
       
@@ -358,14 +367,19 @@
     width: 99px
   
   .hotel
+    
     &__slider
       margin-bottom: 20px
       height: 179px
       margin-top: 27px
+
     //&-slider
       //height: 250px
     &-right
-      min-height: 402px
+      flex-direction: column
+      //max-height: 210px
+  .booking
+    margin-bottom: 20px
   .newsletter
     padding: 76px 0 83 px 0
     &__title
@@ -587,8 +601,14 @@
         margin-top: 12px
         margin-left: -5px
         margin-bottom: 19px
+      &--mb-5
+        margin-top: 9px
+        margin-bottom: 32px
       &--mb-6
         margin-top: 3px  
+        margin-left: 0
+      &--mb-3
+        margin-top: 1px
     &__ul
       margin-left: 3px
       
@@ -609,17 +629,21 @@
     &__info
       margin-top: -146px
       margin-right: 57px
- 
+    &__message
+      margin-bottom: 24px
     
     &__button
       margin-top: 22px
     &__text
-      margin-bottom: 18px
+      margin-top: 23px
+      margin-bottom: 19px
     &__conditions
       margin-top: -6.5px
       margin-right: -1px
       margin-bottom: 8px
-
+    &__item
+      &--mb-2
+        margin-left: -1px
     &__icon
       margin-bottom: -2px
       &-wrapper
@@ -628,12 +652,32 @@
         margin-top: 3px
         margin-left: -3px
         margin-right: -7px
-        
+        &--list23
+          margin-top: -39px
+          margin-left: -10px
+          margin-bottom: -3px
+        &--list3
+          list-style: none
+          margin-left: -11px
+          text-decoration: none
+          margin-bottom: 1px
+      &-list
+        &-img
+          margin-left: -40px
+          margin-right: 5px
+          margin-top: 11px
+          margin-bottom: -11px
+      &-mb
+        margin-left: 1px
+        margin-top: 48px
+        margin-bottom: -1px
     &__social
       &-network
         display: flex
         flex-wrap: wrap
         justify-content: flex-start
+        margin-top: -24px
+        margin-left: 4px
       &-links
         margin-top: 0
     &__link

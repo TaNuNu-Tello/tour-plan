@@ -1344,7 +1344,7 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
-  margin-top: 47px;
+  margin-top: 35px;
   margin-left: 3px;
 }
 
@@ -1354,10 +1354,10 @@ template {
   margin-top: 3px;
   margin-left: 4px;
   margin-right: -3px;
+  list-style: none;
 }
 
 .footer__icon-wrapper--list {
-  list-style: none;
   margin-bottom: 0;
   text-decoration: none;
   margin-left: -21px;
@@ -1368,7 +1368,6 @@ template {
   text-decoration: none;
   margin-left: -36px;
   margin-bottom: -3px;
-  list-style: none;
   margin-left: 5px;
 }
 
@@ -1647,6 +1646,9 @@ template {
     padding-top: 12px;
     padding-bottom: 57px;
   }
+  .hotel-wrapper {
+    margin-bottom: 0;
+  }
   .hotel-info__offer {
     margin-left: 16px;
   }
@@ -1746,6 +1748,7 @@ template {
   .footer__message {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 20px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1785,6 +1788,7 @@ template {
     grid-column: span 2;
     margin-left: 56px;
     margin-right: 13px;
+    margin-top: -2px;
   }
   .footer__additional {
     grid-column: span 2;
@@ -1848,16 +1852,22 @@ template {
     padding-top: 20px;
   }
   .footer__social-network {
-    margin-top: -22px;
+    margin-top: -27px;
   }
   .footer__additional {
     margin-left: -22px;
     margin-right: -20px;
   }
   .footer__title--mb-6 {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 3px;
     margin-right: -6px;
+  }
+  .footer__title--mb-5 {
+    margin-top: 10px;
+  }
+  .footer__text {
+    margin-top: 19px;
   }
 }
 
@@ -1985,7 +1995,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 402px;
+    max-height: 402px;
   }
   .hotel-info-slider {
     height: 350px;
@@ -2051,7 +2061,13 @@ template {
     margin-top: 27px;
   }
   .hotel-right {
-    min-height: 402px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking {
+    margin-bottom: 20px;
   }
   .newsletter {
     padding: 76px 0 83 px 0;
@@ -2324,8 +2340,16 @@ template {
     margin-left: -5px;
     margin-bottom: 19px;
   }
+  .footer__title--mb-5 {
+    margin-top: 9px;
+    margin-bottom: 32px;
+  }
   .footer__title--mb-6 {
     margin-top: 3px;
+    margin-left: 0;
+  }
+  .footer__title--mb-3 {
+    margin-top: 1px;
   }
   .footer__ul {
     margin-left: 3px;
@@ -2353,16 +2377,23 @@ template {
     margin-top: -146px;
     margin-right: 57px;
   }
+  .footer__message {
+    margin-bottom: 24px;
+  }
   .footer__button {
     margin-top: 22px;
   }
   .footer__text {
-    margin-bottom: 18px;
+    margin-top: 23px;
+    margin-bottom: 19px;
   }
   .footer__conditions {
     margin-top: -6.5px;
     margin-right: -1px;
     margin-bottom: 8px;
+  }
+  .footer__item--mb-2 {
+    margin-left: -1px;
   }
   .footer__icon {
     margin-bottom: -2px;
@@ -2374,6 +2405,28 @@ template {
     margin-left: -3px;
     margin-right: -7px;
   }
+  .footer__icon-wrapper--list23 {
+    margin-top: -39px;
+    margin-left: -10px;
+    margin-bottom: -3px;
+  }
+  .footer__icon-wrapper--list3 {
+    list-style: none;
+    margin-left: -11px;
+    text-decoration: none;
+    margin-bottom: 1px;
+  }
+  .footer__icon-list-img {
+    margin-left: -40px;
+    margin-right: 5px;
+    margin-top: 11px;
+    margin-bottom: -11px;
+  }
+  .footer__icon-mb {
+    margin-left: 1px;
+    margin-top: 48px;
+    margin-bottom: -1px;
+  }
   .footer__social-network {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2383,6 +2436,8 @@ template {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: -24px;
+    margin-left: 4px;
   }
   .footer__social-links {
     margin-top: 0;
