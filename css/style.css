@@ -2425,7 +2425,6 @@ template {
   .footer__icon-mb {
     margin-left: 1px;
     margin-top: 48px;
-    margin-bottom: -1px;
   }
   .footer__social-network {
     display: -webkit-box;
