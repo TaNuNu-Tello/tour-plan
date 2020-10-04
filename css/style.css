@@ -1903,10 +1903,14 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .navbar__user--mobile--visible {
+    margin-left: 0;
+  }
   .navbar__search--mobile--visible {
     max-width: 243px;
   }
   .navbar-bottom {
+    overflow-y: scroll;
     display: none;
     position: fixed;
     left: 0;
