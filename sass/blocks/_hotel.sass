@@ -15,24 +15,39 @@
     &__description
       margin: 5px 0
       margin-bottom: 9px
-  
-    
+      font-size: 12px
+      line-height: 15px
+
   &-name
     font-size: 24px
     line-height: 30px
-    
+
   &-wrapper
     display: flex
     flex-wrap: wrap
     align-items: center
     margin-bottom: -4px
+    &__back
+      width: 100%
+      min-height: 45px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      border-radius: 4px
+      background-color: $primary
+      border: 0
+      color: $light
+      cursor: pointer
+      text-decoration: none
+      padding: 7px
+
   &-description
     font-size: 12px
     line-height: 15px
   &-grid
     display: flex
     justify-content: space-between
-    
+
   &-right
     display: flex
     flex-direction: column
@@ -57,11 +72,11 @@
         left: 0
         right: 0
         background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-        z-index: 10 
+        z-index: 10
     &__button
       position: absolute
       top: 50%
-      transform: translateY(-50%) 
+      transform: translateY(-50%)
       z-index: 99
       width: 30px
       height: 30px
@@ -70,20 +85,19 @@
       background-repeat: no-repeat
       background-position: center
       background-size: 10px
-      background-color: transparent  
+      background-color: transparent
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
-        outline: none 
+        outline: none
       &--prev
         left: 18px
         background-image: url(../img/arrow-prev.svg)
         outline: none
-    
+
 .stars
   flex-basis: 100%
-  
-    
+
 .ofer
   font-size: 10px
   line-height: 13px
@@ -107,8 +121,6 @@
     &-shot
       font-size: 10px
       margin-left: 0.5px
-
- 
 
 .booking
   background-color: $dark
@@ -139,7 +151,7 @@
     line-height: 16px
   &__room
     margin-top: 4px
-    
+
   &__text
     display: flex
     align-items: center
@@ -149,7 +161,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 16px
-    
+
   &__description
     margin-left: 9px
   &__call-center
@@ -198,5 +210,3 @@
     allowfullscreen: ""
     aria-hidden: false
     tabindex: 0
-    
-
