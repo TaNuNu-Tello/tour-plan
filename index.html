@@ -733,18 +733,24 @@
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
+            minlength="6"
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
+            minlength="2"
           />
           <textarea
             class="message modal__message"
@@ -764,6 +770,8 @@
     -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=66bae821-6670-4eb4-8707-84cf693b8b2a&lang=ru_RU"></script>
   </body>

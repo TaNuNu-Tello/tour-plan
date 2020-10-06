@@ -1624,7 +1624,7 @@ template {
   max-width: 478px;
   padding-left: 87px;
   padding-right: 87px;
-  min-height: 487px;
+  padding-bottom: 30px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1640,6 +1640,10 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal__bottom {
+  margin-bottom: 20px;
 }
 
 .modal__close {
@@ -1658,7 +1662,7 @@ template {
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 37px;
 }
 
 .modal__input {
@@ -1783,9 +1787,6 @@ template {
   }
   .footer__social-network {
     margin-top: 0;
-  }
-  .modal__dialog {
-    padding: 32px 53px;
   }
 }
 
@@ -2056,9 +2057,6 @@ template {
   .footer__text {
     margin-top: 19px;
   }
-  .modal__dialog {
-    overflow-y: scroll;
-  }
 }
 
 @media (max-width: 765px) {
@@ -2236,6 +2234,17 @@ template {
   .footer__title--mb-6 {
     margin-right: 0;
   }
+  .modal__dialog {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  .modal__dialog--visible {
+    overflow-y: scroll;
+    max-height: 100%;
+  }
+  .modal__button {
+    min-width: 45%;
+  }
 }
 
 @media (max-width: 594px) {
@@ -2250,8 +2259,11 @@ template {
     margin-right: 0;
   }
   .modal__dialog {
-    padding: 32px 35px;
-    top: 63.58%;
+    width: 90%;
+    padding-bottom: 21px;
+  }
+  .modal__button {
+    min-width: 36%;
   }
 }
 
@@ -2384,6 +2396,14 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .modal__dialog--visible {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .modal__button {
+    min-width: 114px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2464,10 +2484,7 @@ template {
     margin-bottom: 20px;
     margin-right: 0;
   }
-  .modal__dialog {
-    top: 60%;
-  }
-  .modal__button {
+  .booking__button {
     margin-bottom: 10px;
   }
   .map {
@@ -2691,6 +2708,15 @@ template {
   .footer__additional {
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  .modal__dialog--visible {
+    max-width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 100%;
+  }
+  .modal__dialog__button {
+    min-width: 114px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 .modal
+
   &__overlay
     position: fixed
     left: 0
@@ -13,6 +14,7 @@
     &--visible
       visibility: visible
       opacity: 1
+
   &__dialog
 
     position: fixed
@@ -21,7 +23,7 @@
     max-width: 478px
     padding-left: 87px
     padding-right: 87px
-    min-height: 487px
+    padding-bottom: 30px
     background-color: $dark
     transform: translate(-50%, -50%)
     color: $light
@@ -34,7 +36,8 @@
     &--visible
       visibility: visible
       opacity: 1
-
+  &__bottom
+    margin-bottom: 20px
   &__close
     position: absolute
     right: 18px
@@ -49,7 +52,7 @@
     margin-bottom: 15px
     text-transform: uppercase
     text-align: center
-    margin-top: 30px
+    margin-top: 37px
   &__input
     width: 100%
     margin-bottom: 15px

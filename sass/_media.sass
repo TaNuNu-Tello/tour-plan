@@ -20,9 +20,6 @@
     &__social
       &-network
         margin-top: 0
-  .modal
-    &__dialog
-      padding: 32px 53px
 
 @media (max-width: 992px)
   .container,
@@ -227,9 +224,7 @@
         margin-top: 10px
     &__text
       margin-top: 19px
-  .modal
-    &__dialog
-      overflow-y: scroll
+
 @media (max-width: 765px)
   .container
     max-width: 576px
@@ -365,7 +360,15 @@
     &__title
       &--mb-6
         margin-right: 0
-
+  .modal
+    &__dialog
+      padding-left: 37px
+      padding-right: 37px
+      &--visible
+        overflow-y: scroll
+        max-height: 100%
+    &__button
+      min-width: 45%
 @media (max-width: 594px)
   .reviews
     &-slider
@@ -380,9 +383,10 @@
       margin-right: 0
   .modal
     &__dialog
-      padding: 32px 35px
-      top: 63.58%
-
+      width: 90%
+      padding-bottom: 21px
+    &__button
+      min-width: 36%
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -480,6 +484,14 @@
   .footer
     &__conditions
       flex-wrap: wrap
+  .modal
+    &__dialog
+      &--visible
+        padding-left: 39px
+        padding-right: 39px
+    &__button
+      min-width: 114px
+      margin-bottom: 10px
 @media ( max-width: 320px )
   //.parallax-window 
     //min-height: 319px
@@ -558,9 +570,7 @@
   .booking
     margin-bottom: 20px
     margin-right: 0
-  .modal
-    &__dialog
-      top: 60%
+
     &__button
       margin-bottom: 10px
   .map
@@ -746,3 +756,13 @@
       grid-row: 5
     &__additional
       grid-row: 4
+  .modal
+    &__dialog
+
+      &--visible
+        max-width: 280px
+        padding-left: 20px
+        padding-right: 20px
+        max-height: 100%
+      &__button
+        min-width: 114px
