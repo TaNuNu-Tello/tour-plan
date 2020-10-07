@@ -16,11 +16,14 @@
       height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__social
       &-network
         margin-top: 0
-
+  .modal
+    &__dialog
+      width: 63%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -49,7 +52,8 @@
         line-height: 15px
   .search
     &__input
-      width: 340px
+      &-group
+        width: 340px
     &__button
       border-radius: 0 6px 6px 0
   .user
@@ -128,7 +132,8 @@
       grid-row-gap: 48px
       grid-column-gap: 0px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__message
       flex-basis: 100%
       margin-bottom: 20px
@@ -364,6 +369,7 @@
     &__dialog
       padding-left: 37px
       padding-right: 37px
+      width: 63%
       &--visible
         overflow-y: scroll
         max-height: 100%
@@ -449,7 +455,8 @@
       grid-column: 1
       margin-left: 0
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__contact
       &-details
         grid-row: 6
@@ -603,8 +610,9 @@
       margin-left: 8px
   .subscribe
     &__input
-      padding: 17px
-
+      &-group
+        padding: 17px
+    &
   .reviews
     padding-top: 0px
     margin-top: 40px

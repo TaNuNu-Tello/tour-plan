@@ -62,4 +62,42 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  //Обработка форм
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please enter a name",
+        minlength: "Name must be at least 2 letters",
+      },
+      phone: {
+        required: "Phone is required",
+        minlength: "Name must be at least 6 letters",
+      },
+      email: {
+        required: "We need your email address to contact you",
+
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter a name",
+          minlength: "Name must be at least 2 letters",
+        },
+        phone: {
+          required: "Phone is required",
+          minlength: "Name must be at least 6 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
 });

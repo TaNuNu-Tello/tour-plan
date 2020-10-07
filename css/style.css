@@ -55,6 +55,11 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1444,6 +1449,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1667,7 +1676,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   margin-left: 1px;
 }
 
@@ -1706,7 +1715,7 @@ template {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message::-webkit-input-placeholder {
@@ -1764,6 +1773,10 @@ template {
   margin-left: 3px;
 }
 
+.modal__button {
+  margin-top: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1781,12 +1794,15 @@ template {
     width: 24%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .footer__social-network {
     margin-top: 0;
+  }
+  .modal__dialog {
+    width: 63%;
   }
 }
 
@@ -1821,7 +1837,7 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
+  .search__input-group {
     width: 340px;
   }
   .search__button {
@@ -1929,7 +1945,7 @@ template {
     grid-row-gap: 48px;
     grid-column-gap: 0px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2237,6 +2253,7 @@ template {
   .modal__dialog {
     padding-left: 37px;
     padding-right: 37px;
+    width: 63%;
   }
   .modal__dialog--visible {
     overflow-y: scroll;
@@ -2344,7 +2361,7 @@ template {
     grid-column: 1;
     margin-left: 0;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2519,7 +2536,7 @@ template {
   .newsletter__subscribe {
     margin-left: 8px;
   }
-  .subscribe__input {
+  .subscribe__input-group {
     padding: 17px;
   }
   .reviews {
