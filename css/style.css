@@ -1549,6 +1549,9 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__conditions {
