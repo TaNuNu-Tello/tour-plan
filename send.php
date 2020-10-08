@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone= $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 
 // Формирование самого письма
@@ -16,8 +17,10 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Сообщение:</b><br>$message<br>
+<b>Почта:</b>$email<br>
 ";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -25,7 +28,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
  
@@ -39,14 +42,17 @@ try {
     $mail->setFrom('tkiatova@gmail.com', 'Татьяна Киятова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('talex36040@yandex.ru');  
+    $mail->addAddress('talex36040@yandex.ru'); 
+    $mail->addAddress('alex36040@rambler.ru');   
     
 
     
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+    // Отправка сообщения
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $body; 
+    
+    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 

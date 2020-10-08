@@ -68,16 +68,32 @@ $(document).ready(function () {
     messages: {
       name: {
         required: "Please enter a name",
-        minlength: "Name must be at least 2 letters",
+        minlength: "minimum 2 characters",
       },
       phone: {
         required: "Phone is required",
-        minlength: "Name must be at least 6 letters",
+        minlength: "minimum 6 characters",
       },
       email: {
-        required: "We need your email address to contact you",
-
-        email: "Your email address must be in the format of name@domain.com",
+        required: "enter email",
+        email: "Email entered incorrectly",
+      },
+    },
+  });
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please enter a name",
+        minlength: "minimum 2 characters",
+      },
+      phone: {
+        required: "Phone is required",
+        minlength: "minimum 6 characters",
+      },
+      email: {
+        required: "enter email",
+        email: "Email entered incorrectly",
       },
     },
   });
@@ -87,15 +103,15 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please enter a name",
-          minlength: "Name must be at least 2 letters",
+          minlength: "minimum 2 characters",
         },
         phone: {
           required: "Phone is required",
-          minlength: "Name must be at least 6 letters",
+          minlength: "minimum 6 characters",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "enter email",
+          email: "Email entered incorrectly",
         },
       },
     });
