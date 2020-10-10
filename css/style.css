@@ -45,14 +45,15 @@ img {
 .button {
   min-width: 160px;
   min-height: 50px;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #fff;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
-  background-color: #EC1F46;
-  border-radius: 4px;
-  border: none;
   cursor: pointer;
 }
 
@@ -1653,6 +1654,13 @@ template {
   white-space: nowrap;
 }
 
+.footer__button--link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  max-width: 102px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -2324,6 +2332,10 @@ template {
   .footer__additional {
     margin-right: 0;
   }
+  .footer__conditions {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .modal__dialog {
     width: 90%;
     padding-bottom: 21px;
@@ -2457,10 +2469,6 @@ template {
   }
   .card {
     width: 100%;
-  }
-  .footer__conditions {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .modal__dialog--visible {
     padding-left: 39px;
@@ -2849,7 +2857,19 @@ template {
   .footer__phone-number:hover {
     color: #696969;
   }
-  .footer-bottom__link:hover {
+  .footer__icon-mb:hover {
+    color: #696969;
+  }
+  .footer__conditions:hover {
+    color: #696969;
+  }
+  .footer-bottom:hover {
+    color: #696969;
+  }
+  .footer__link:hover {
+    color: #696969;
+  }
+  .footer__social-links:hover {
     color: #696969;
   }
 }

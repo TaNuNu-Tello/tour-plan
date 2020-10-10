@@ -390,6 +390,9 @@
   .footer
     &__additional
       margin-right: 0
+    &__conditions
+      flex-wrap: wrap
+
   .modal
     &__dialog
       width: 90%
@@ -470,6 +473,8 @@
     &__conditions
       grid-row: 8
       grid-column: 1
+      margin-right: 40px
+
 @media ( max-width: 478px)
 
   .reviews
@@ -491,9 +496,7 @@
           margin-top: 0
   .card
     width: 100%
-  .footer
-    &__conditions
-      flex-wrap: wrap
+
   .modal
     &__dialog
       &--visible
@@ -833,6 +836,15 @@
       color: #696969
     &__phone-number:hover
       color: #696969
+    &__icon-mb:hover
+      color: #696969
+    &__conditions:hover
+      color: #696969
     &-bottom
-      &__link:hover
+      &:hover
+        color: #696969
+    &__link:hover
+      color: #696969
+    &__social
+      &-links:hover
         color: #696969

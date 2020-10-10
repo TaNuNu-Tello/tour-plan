@@ -96,7 +96,7 @@
             <a href="#" class="breadcrumb-list__link">Home</a>
           </li>
           <li class="breadcrumb-list__item">
-            <a href="/index.html" class="breadcrumb-list__link">Flash Offers</a>
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
           </li>
           <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
@@ -114,7 +114,7 @@
             <p class="hotel-description hotel-info__description">
               Our manager will call you in 5 minutes.
             </p>
-            <p><a href="/index.html" class="hotel-wrapper__back">To home</a></p>
+            <p><button href="/index.html" class="button footer__button footer__button--link">To home</button></p>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -163,7 +163,7 @@
             </ul>
           </div>
           <div class="footer__list footer__additional">
-            <h3 class="footer__title--mb-6">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--mb-6">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -225,35 +225,31 @@
             </p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
+                <div class=" footer__icon-wrapper">
                   <img class="footer__icon" src="img/map-maker.svg" alt="icon:map" />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2">
-                <ul class="footer__item--mb-2">
-                  <li class="footer__icon-wrapper footer__icon-wrapper--list">
-                    <img class="footer__icon-list-img" src="img/phone.svg" alt="icon:phone" />
+              <li class="footer__item footer__item-icon">
+                <div class="footer__icon-tel">
+                  <img class="footer__icon" src="img/call.svg" alt="icon: contact-phone">
+                </div>
     
-                    Tel (business hours) :<a class="footer__icon-wrapper--a-list" href="tel:269&nbsp;1500">
-                      269 1500</a>
-                  </li>
-                  <li class="footer__icon-wrapper footer__icon-wrapper--list23">
-                    Tel (hotline) Monday - Saturday:<a class="footer__icon-wrapper--a-list" href="tel:52-56-61-38">
-                      52&NoBreak;-&NoBreak;56&NoBreak;-&NoBreak;61&NoBreak;-&NoBreak;38
-                    </a>(08:&NoBreak;00&nbsp;am&nbsp;–&nbsp;20:00 pm)
-                  </li>
-                  <li class="footer__icon-wrapper footer__icon-wrapper--list3">
-                    Tel (hotline) Sunday:<a class="footer__icon-wrapper--a-list" href="tel:52-56-61-38">
-                      &NoBreak;52&NoBreak;-&NoBreak;56&NoBreak;-&NoBreak;61&NoBreak;-&NoBreak;38
-                    </a>(&NoBreak;08&NoBreak;:&NoBreak;00&nbsp;am&nbsp;–&nbsp;14&NoBreak;:&NoBreak;00&NoBreak;
-                    pm&NoBreak;)
-                  </li>
-                </ul>
+                <p class="footer__contact-phone">
+                  Tel (business hours) :
+                  <a class="footer__phone-number" href="tel:2691500">269 1500</a>
+                  <br>
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer__phone-number">52-56-61-38</a>
+                  (08:00 am – 20:00 pm)<br>
+                  Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer__phone-number">52-56-61-38</a>
+                  (08:00 am – 14:00 pm)<br>
+                </p>
               </li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
+                <div class="footer__icon footer__icon-wrapper">
                   <img class="footer__icon-mb" src="img/email.svg" alt="icon:email" />
                 </div>
                 <a class="footer__icon-mb" href="mailto:example@example.com">cherly.lawson@example.com</a>
@@ -263,7 +259,7 @@
           <!-- /.footer__contact-details -->
     
           <div class="footer__contact-form">
-            <h3 class="footer__title--mb-5">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-5">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
@@ -301,6 +297,9 @@
       </div>
       <!-- /.container -->
     </footer>
+ 
+   
+
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal_overlay -->
@@ -327,7 +326,7 @@
     <script src="js/parallax.min.js"></script>
     -->
   <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/aos.js"></script>
