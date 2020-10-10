@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -60,8 +61,6 @@ img {
 }
 
 label.invalid {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
   line-height: 1.5rem;
 }
 
@@ -410,6 +409,7 @@ template {
 
 .navbar {
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .navbar-top {
@@ -424,6 +424,7 @@ template {
           justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .navbar-top__menu-button {
@@ -469,6 +470,7 @@ template {
 
 .logo {
   width: 177px;
+  overflow: hidden;
 }
 
 .search {
@@ -877,6 +879,8 @@ template {
   background-color: #000000;
   border-radius: 10px;
   overflow: hidden;
+  background-size: cover;
+  background: 100% 100%;
 }
 
 .map__frame {
@@ -887,6 +891,7 @@ template {
   allowfullscreen: "";
   aria-hidden: false;
   tabindex: 0;
+  background-size: cover;
 }
 
 /*.parallax-window
@@ -908,6 +913,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .newsletter::before {
@@ -971,6 +977,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .subscribe__button {
@@ -980,6 +987,7 @@ template {
   top: 0;
   height: 100%;
   border: none;
+  border-radius: 0px 4px 4px 0px;
   background-color: #EC1F46;
   color: #ffffff;
   font-style: normal;
@@ -1135,8 +1143,16 @@ template {
   margin: auto;
 }
 
+.maps {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .activities {
   padding: 22px 0 98px 0;
+  overflow: hidden;
 }
 
 .activities__title {
@@ -1295,6 +1311,12 @@ template {
   margin-left: -4px;
 }
 
+.footer__contact-phone {
+  margin-top: -4px;
+  margin-left: 2px;
+  margin-bottom: -9px;
+}
+
 .footer__contact-form {
   grid-column: span 2;
 }
@@ -1369,13 +1391,21 @@ template {
 }
 
 .footer__item--mb-2 {
-  margin-bottom: -13px;
+  margin-bottom: -8px;
+  list-style: none;
 }
 
 .footer__icon {
-  min-width: 20px;
-  margin-right: 21px;
+  min-width: 17px;
+  margin-right: 19px;
   margin-bottom: 1px;
+  margin-left: 2px;
+  margin-top: 1px;
+}
+
+.footer__icon-tel {
+  margin-left: 5px;
+  margin-top: 3px;
 }
 
 .footer__icon-ml {
@@ -1404,7 +1434,7 @@ template {
 
 .footer__icon-wrapper {
   min-width: 40px;
-  margin-bottom: 13px;
+  margin-bottom: 22px;
   margin-top: 3px;
   margin-left: 4px;
   margin-right: -3px;
@@ -1611,6 +1641,16 @@ template {
 
 .footer__legal {
   margin-left: 68px;
+}
+
+.footer__phone-number {
+  text-decoration: none;
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  white-space: nowrap;
 }
 
 .modal__overlay {
@@ -1843,6 +1883,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search__input {
+    width: 340px;
+  }
   .search__input-group {
     width: 340px;
   }
@@ -1850,7 +1893,7 @@ template {
     border-radius: 0 6px 6px 0;
   }
   .user {
-    margin-left: 27px;
+    margin-left: 26px;
   }
   .hotel {
     padding-top: 12px;
@@ -2069,12 +2112,12 @@ template {
     margin-right: -20px;
   }
   .footer__title--mb-6 {
-    margin-top: 3px;
+    margin-top: -2px;
     margin-left: 3px;
     margin-right: -6px;
   }
   .footer__title--mb-5 {
-    margin-top: 10px;
+    margin-top: -9px;
   }
   .footer__text {
     margin-top: 19px;
@@ -2501,11 +2544,12 @@ template {
     margin-top: 27px;
   }
   .subscribe {
-    width: 280px;
+    width: 100%;
   }
   .booking {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     margin-right: 0;
+    padding-bottom: 0px;
   }
   .booking__button {
     margin-bottom: 10px;
@@ -2541,6 +2585,10 @@ template {
   }
   .newsletter__subscribe {
     margin-left: 8px;
+  }
+  .newsletter-wrapper {
+    width: 88%;
+    margin-left: 11px;
   }
   .subscribe__input-group {
     padding: 17px;
@@ -2581,7 +2629,7 @@ template {
   }
   .activities {
     padding-top: 0px;
-    margin-top: -58px;
+    margin-top: -50px;
     margin-left: -6px;
   }
   .activities__title {
@@ -2600,6 +2648,7 @@ template {
   .footer {
     margin-top: -20px;
     margin-left: -6px;
+    padding-bottom: 6px;
   }
   .footer__logo {
     max-width: 97px;
@@ -2611,12 +2660,12 @@ template {
     margin-bottom: 19px;
   }
   .footer__title--mb-5 {
-    margin-top: 9px;
+    margin-top: -26px;
     margin-bottom: 32px;
     margin-right: 0;
   }
   .footer__title--mb-6 {
-    margin-top: 3px;
+    margin-top: -3px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -2641,8 +2690,14 @@ template {
     margin-top: -11px;
   }
   .footer__contact-form {
-    margin-top: -25px;
-    margin-right: -5px;
+    margin-top: 1px;
+    margin-bottom: -21px;
+    margin-right: -4px;
+  }
+  .footer__contact-phone {
+    margin-top: 1px;
+    margin-left: -16px;
+    margin-bottom: -21px;
   }
   .footer__form {
     margin-top: -17px;
@@ -2662,15 +2717,20 @@ template {
     margin-bottom: 19px;
   }
   .footer__conditions {
-    margin-top: -5.5px;
+    margin-top: 0.5px;
     margin-right: -1px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
   .footer__item--mb-2 {
     margin-left: -1px;
   }
   .footer__icon {
     margin-bottom: -2px;
+  }
+  .footer__icon-tel {
+    margin-left: -6px;
+    margin-top: 3px;
+    margin-right: 10px;
   }
   .footer__icon-wrapper {
     min-width: 39px;
@@ -2740,6 +2800,57 @@ template {
   }
   .modal__dialog__button {
     min-width: 114px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  /*тут пишешь все свои ховеры*/
+  .logo__image:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .search__button:hover {
+    opacity: 0.6;
+  }
+  .user__avatar:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .user__name:hover {
+    color: #EC1F46;
+  }
+  .navbar-menu__item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .breadcrumb-list__link:hover {
+    color: #EC1F46;
+  }
+  .button:hover {
+    opacity: 0.6;
+  }
+  .subscribe__button:hover {
+    opacity: 0.6;
+  }
+  .reviews-slider__button:hover {
+    background-color: #FCA1A8;
+    border-radius: 4px;
+  }
+  .card__button:hover {
+    opacity: 0.6;
+  }
+  .footer__logo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .footer__link:hover {
+    color: #696969;
+  }
+  .footer__phone-number:hover {
+    color: #696969;
+  }
+  .footer-bottom__link:hover {
+    color: #696969;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,19 @@
 .navbar
   background-color: #ffffff
+  overflow: hidden
   &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    overflow: hidden
     &__menu-button
       display: none
   &__search
     margin-right: auto
     margin-left: 108px
+
   &-bottom
     background-color: $dark
   &-menu
@@ -21,7 +24,7 @@
     align-items: center
     justify-content: space-between
     color: $light
-    
+
     &__link
       color: inherit
       text-decoration: none
@@ -33,7 +36,9 @@
         &--visible
           display: none
 .logo
-  width: 177px 
+  width: 177px
+  overflow: hidden
+
 .search
   display: flex
   position: relative
@@ -63,7 +68,6 @@
   display: flex
   align-items: center
   text-decoration: none
-  
 
   &__avatar
     width: 40px
@@ -82,5 +86,3 @@
    // &--mobile 
      // &_visible
     //display: none
-
-

@@ -42,6 +42,7 @@
       &--visible
     &__search
       margin-left: auto
+
     &-menu
       padding-top: 21px
       padding-bottom: 22px
@@ -52,12 +53,14 @@
         line-height: 15px
   .search
     &__input
+      width: 340px
       &-group
         width: 340px
+
     &__button
       border-radius: 0 6px 6px 0
   .user
-    margin-left: 27px
+    margin-left: 26px
   .hotel
     padding-top: 12px
     padding-bottom: 57px
@@ -222,11 +225,11 @@
       margin-right: -20px
     &__title
       &--mb-6
-        margin-top: 3px
+        margin-top: -2px
         margin-left: 3px
         margin-right: -6px
       &--mb-5
-        margin-top: 10px
+        margin-top: -9px
     &__text
       margin-top: 19px
 
@@ -573,10 +576,11 @@
         height: 179px
         margin-top: 27px
   .subscribe
-    width: 280px
+    width: 100%
   .booking
-    margin-bottom: 20px
+    margin-bottom: 12px
     margin-right: 0
+    padding-bottom: 0px
 
     &__button
       margin-bottom: 10px
@@ -608,6 +612,9 @@
       padding-left: 10px
     &__subscribe
       margin-left: 8px
+    &-wrapper
+      width: 88%
+      margin-left: 11px
   .subscribe
     &__input
       &-group
@@ -644,7 +651,7 @@
         padding: 0 20px 20px
   .activities
     padding-top: 0px
-    margin-top: -58px
+    margin-top: -50px
     margin-left: -6px
     &__title
       margin-bottom: 36px
@@ -661,6 +668,7 @@
   .footer
     margin-top: -20px
     margin-left: -6px
+    padding-bottom: 6px
     &__logo
       max-width: 97px
       margin-top: 10px
@@ -670,11 +678,12 @@
         margin-left: -5px
         margin-bottom: 19px
       &--mb-5
-        margin-top: 9px
+
+        margin-top: -26px
         margin-bottom: 32px
         margin-right: 0
       &--mb-6
-        margin-top: 3px
+        margin-top: -3px
         margin-left: 0
         margin-right: 0
       &--mb-3
@@ -694,8 +703,13 @@
       &-details
         margin-top: -11px
       &-form
-        margin-top: -25px
-        margin-right: -5px
+        margin-top: 1px
+        margin-bottom: -21px
+        margin-right: -4px
+      &-phone
+        margin-top: 1px
+        margin-left: -16px
+        margin-bottom: -21px
     &__form
       margin-top: -17px
     &__info
@@ -710,14 +724,18 @@
       margin-top: 23px
       margin-bottom: 19px
     &__conditions
-      margin-top: -5.5px
+      margin-top: 0.5px
       margin-right: -1px
-      margin-bottom: 7px
+      margin-bottom: 6px
     &__item
       &--mb-2
         margin-left: -1px
     &__icon
       margin-bottom: -2px
+      &-tel
+        margin-left: -6px
+        margin-top: 3px
+        margin-right: 10px
 
       &-wrapper
         min-width: 39px
@@ -774,3 +792,47 @@
         max-height: 100%
       &__button
         min-width: 114px
+@media(hover: hover) and (pointer: fine)
+  /*тут пишешь все свои ховеры*/
+  .logo
+    &__image:hover
+      transform: scale(0.9)
+  .search
+    &__button:hover
+      opacity: 0.6
+  .user
+    &__avatar:hover
+      transform: scale(1.2)
+    &__name:hover
+      color: $primary
+  .navbar
+    &-menu
+      &__item:hover
+        transform: scale(1.2)
+  .breadcrumb
+    &-list
+      &__link:hover
+        color: $primary
+  .button:hover
+    opacity: 0.6
+  .subscribe
+    &__button:hover
+      opacity: 0.6
+  .reviews
+    &-slider
+      &__button:hover
+        background-color: #FCA1A8
+        border-radius: 4px
+  .card
+    &__button:hover
+      opacity: 0.6
+  .footer
+    &__logo:hover
+      transform: scale(1.2)
+    &__link:hover
+      color: #696969
+    &__phone-number:hover
+      color: #696969
+    &-bottom
+      &__link:hover
+        color: #696969
