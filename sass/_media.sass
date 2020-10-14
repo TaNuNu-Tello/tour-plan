@@ -1,0 +1,44 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .navbar
+    &-menu
+      margin-left: 0
+      margin: auto
+    &-wrapper
+      margin: auto
+      max-width: 80%
+@madia (max-width: 992px)
+  .container
+    max-width: 700px
+@media ( max-width: 768px )
+  .container
+    max-width: 576px
+
+  .navbar
+    &-top
+      &__button
+        width: 22px
+        height: 16px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        border: none
+        background-color: $light
+
+        &-line
+          width: 22px
+          height: 2px
+          background-color: $text-line
+          padding: 0
+          cursor: pointer
+
+    &-menu
+      display: none
+
+    &-wrapper
+      min-width: 648px
+      margin-left: -36px
+      &__button
+        display: none
