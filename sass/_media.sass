@@ -3,18 +3,18 @@
     max-width: 960px
   .navbar
     &-menu
-      margin-left: 0
+
       margin: auto
     &-wrapper
       margin: auto
-      max-width: 80%
-@madia (max-width: 992px)
-  .container
-    max-width: 700px
-@media ( max-width: 768px )
-  .container
-    max-width: 576px
 
+@media (max-width: 992px)
+  .container
+    max-width: 760px
+  .navbar
+    &-menu
+      min-width: 450px
+@media ( max-width: 800px )
   .navbar
     &-top
       &__button
@@ -36,9 +36,19 @@
 
     &-menu
       display: none
-
     &-wrapper
-      min-width: 648px
-      margin-left: -36px
+
       &__button
         display: none
+@media ( max-width: 768px )
+  .container
+    max-width: 728px
+    width: 84%
+
+@media ( max-width: 320px )
+  .container
+    max-width: 270px
+  .navbar
+    &-wrapper
+      margin-left: 0
+      padding-top: 18px
