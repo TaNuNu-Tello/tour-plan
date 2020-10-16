@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -420,16 +420,24 @@ template {
   text-decoration: none;
 }
 
+.navbar-wrapper {
+  margin: 0 70px;
+  margin-right: 35px;
+}
+
+.navbar-wrapper__button {
+  margin-left: -93px;
+}
+
 .shop__banner {
   position: relative;
   overflow: hidden;
-  width: 1280px;
-  margin-left: -69px;
   margin-top: -16px;
+  background-color: #E8EAE9;
 }
 
 .shop__banner-cool {
-  margin-top: 70px;
+  margin-top: 63px;
   color: #36B37E;
   font-weight: 600;
   font-size: 14px;
@@ -439,7 +447,9 @@ template {
   border-radius: 2000px;
   max-width: 175px;
   text-align: center;
-  margin-bottom: -23px;
+  margin-bottom: -26px;
+  padding: 5px;
+  width: 173px;
 }
 
 .shop__banner-title {
@@ -449,7 +459,7 @@ template {
   color: #183B56;
   letter-spacing: 0.2px;
   z-index: 999;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .shop__banner-info {
@@ -457,36 +467,35 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 652px;
-  margin-left: 107px;
+  padding-left: 108px;
 }
 
 .shop__banner-picters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 1280px;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 700px;
-  background-color: #E8EAE9;
+  background-color: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
   border-radius: 8px;
   position: relative;
   z-index: 99;
 }
 
-.shop__banner-picture {
+.shop__banner-picter {
   position: absolute;
   left: 27.97%;
-  right: -11.88%;
+  right: 0.12%;
   z-index: -1;
 }
 
-.shop__banner-picture::after {
+.shop__banner-picter::after {
   background-color: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
 }
 
@@ -497,13 +506,15 @@ template {
   font-size: 20px;
   line-height: 36px;
   margin-bottom: 52px;
+  max-width: 652px;
+  margin-right: -70px;
 }
 
 .shop__banner-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 459px;
+  min-width: 460px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -555,9 +566,9 @@ template {
   margin-right: 8px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .container {
-    max-width: 960px;
+    width: 85%;
   }
   .navbar-menu {
     margin: auto;
@@ -569,10 +580,19 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 760px;
+    width: 90%;
   }
   .navbar-menu {
     min-width: 450px;
+  }
+  .shop__banner-text {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .shop__banner-title {
+    font-size: 48px;
+    line-height: 60px;
   }
 }
 
@@ -614,7 +634,23 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 728px;
-    width: 84%;
+    width: 95%;
+  }
+  .navbar-wrapper {
+    padding: 25px 41px;
+  }
+  .shop__banner {
+    margin-top: 22px;
+  }
+  .shop__banner-picter {
+    position: absolute;
+    left: -0.03%;
+    right: -64.88%;
+    z-index: -1;
+    margin-top: 19px;
+  }
+  .shop__banner-info {
+    padding-left: 26px;
   }
 }
 

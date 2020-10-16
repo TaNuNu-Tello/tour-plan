@@ -1,6 +1,6 @@
-@media (max-width: 1200px)
+@media (max-width: 1350px)
   .container
-    max-width: 960px
+    width: 85%
   .navbar
     &-menu
 
@@ -10,10 +10,19 @@
 
 @media (max-width: 992px)
   .container
-    max-width: 760px
+    width: 90%
   .navbar
     &-menu
       min-width: 450px
+  .shop
+    &__banner
+      &-text
+        max-width: 400px
+        font-size: 18px
+        line-height: 32px
+      &-title
+        font-size: 48px
+        line-height: 60px
 @media ( max-width: 800px )
   .navbar
     &-top
@@ -43,8 +52,21 @@
 @media ( max-width: 768px )
   .container
     max-width: 728px
-    width: 84%
-
+    width: 95%
+  .navbar
+    &-wrapper
+      padding: 25px 41px
+  .shop
+    &__banner
+      margin-top: 22px
+      &-picter
+        position: absolute
+        left: -0.03%
+        right: -64.88%
+        z-index: -1
+        margin-top: 19px
+      &-info
+        padding-left: 26px
 @media ( max-width: 320px )
   .container
     max-width: 270px
