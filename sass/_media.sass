@@ -1,13 +1,17 @@
-@media (max-width: 1350px)
+@media (max-width: 1250px)
   .container
-    width: 85%
+    max-width: 85%
   .navbar
-    &-menu
-
-      margin: auto
     &-wrapper
+      margin: 0 19px
+    &-menu
       margin: auto
-
+  .shop
+    &__banner
+      &-text
+        margin-right: 29px
+      &-picter
+        width: 90%
 @media (max-width: 992px)
   .container
     width: 90%
@@ -23,7 +27,12 @@
       &-title
         font-size: 48px
         line-height: 60px
-@media ( max-width: 800px )
+      &-info
+        padding-left: 61px
+      &-picter
+        width: 100%
+        left: 16.97%
+@media (max-width: 910px)
   .navbar
     &-top
       &__button
@@ -46,31 +55,104 @@
     &-menu
       display: none
     &-wrapper
-
       &__button
         display: none
+  .shop
+    &__banner
+      &-info
+        padding-left: 35px
+      &-picter
+        padding-left: 35px
 @media ( max-width: 768px )
   .container
-    max-width: 728px
+    max-width: 727px
     width: 95%
   .navbar
     &-wrapper
-      padding: 25px 41px
+      padding: 25px 20px
   .shop
     &__banner
       margin-top: 22px
+      &-cool
+        margin-top: 35px
       &-picter
         position: absolute
-        left: -0.03%
-        right: -64.88%
+        left: -7%
         z-index: -1
-        margin-top: 19px
+        margin-top: -16px
+        width: 982px
       &-info
         padding-left: 26px
+      &-title
+        margin-bottom: 2px
+      &-text
+        margin-bottom: 39px
+      &-icons
+        min-width: 442px
+        margin-top: -17px
+      &-picters
+        min-height: 624px
 @media ( max-width: 320px )
   .container
-    max-width: 270px
+    max-width: 320px
   .navbar
     &-wrapper
-      margin-left: 0
-      padding-top: 18px
+      width: 280px
+      padding: 18px 5px
+  .shop
+    &__banner
+      max-width: 320px
+      border-radius: 0
+      &-picter
+        position: absolute
+        left: -144%
+        right: 0
+        z-index: -1
+        -webkit-box-ordinal-group: 0
+        -ms-flex-order: -1
+        order: -1
+        width: 937px
+        top: 12px
+      &-picters
+        align-items: center
+      &-cool
+        margin-top: 380px
+        margin-left: -27px
+        padding: 1px 27px
+        margin-bottom: -14px
+      &-title
+        font-size: 32px
+        line-height: 40px
+        text-align: center
+        margin-bottom: 5px
+      &-text
+        max-width: 280px
+        text-align: center
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 25px
+  .shop
+    &-button
+      font-size: 16px
+      line-height: 22px
+      margin-left: -24px
+      padding: 12px 49px
+    &__banner
+      &-picters
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+      &-icons
+        min-width: 275px
+        margin-top: -34px
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: space-evenly
+        margin-left: -28px
+      &-icon
+        &-li
+          padding-bottom: 14px
+  .online
+    &-pay
+      width: 24px
+      height: 24px

@@ -14,6 +14,7 @@ body {
 
 img {
   max-width: 100%;
+  height: 100%;
 }
 
 .shop__banner-cool {
@@ -429,11 +430,16 @@ template {
   margin-left: -93px;
 }
 
+.navbar-menu__link {
+  color: #183B56;
+}
+
 .shop__banner {
   position: relative;
   overflow: hidden;
   margin-top: -16px;
   background-color: #E8EAE9;
+  border-radius: 8px;
 }
 
 .shop__banner-cool {
@@ -445,11 +451,9 @@ template {
   border: 1px solid #36B37E;
   background-color: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
-  max-width: 175px;
   text-align: center;
   margin-bottom: -26px;
-  padding: 5px;
-  width: 173px;
+  padding: 5px 14px;
 }
 
 .shop__banner-title {
@@ -566,15 +570,21 @@ template {
   margin-right: 8px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1250px) {
   .container {
-    width: 85%;
+    max-width: 85%;
+  }
+  .navbar-wrapper {
+    margin: 0 19px;
   }
   .navbar-menu {
     margin: auto;
   }
-  .navbar-wrapper {
-    margin: auto;
+  .shop__banner-text {
+    margin-right: 29px;
+  }
+  .shop__banner-picter {
+    width: 90%;
   }
 }
 
@@ -594,9 +604,16 @@ template {
     font-size: 48px;
     line-height: 60px;
   }
+  .shop__banner-info {
+    padding-left: 61px;
+  }
+  .shop__banner-picter {
+    width: 100%;
+    left: 16.97%;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 910px) {
   .navbar-top__button {
     width: 22px;
     height: 16px;
@@ -629,38 +646,126 @@ template {
   .navbar-wrapper__button {
     display: none;
   }
+  .shop__banner-info {
+    padding-left: 35px;
+  }
+  .shop__banner-picter {
+    padding-left: 35px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 728px;
+    max-width: 727px;
     width: 95%;
   }
   .navbar-wrapper {
-    padding: 25px 41px;
+    padding: 25px 20px;
   }
   .shop__banner {
     margin-top: 22px;
   }
+  .shop__banner-cool {
+    margin-top: 35px;
+  }
   .shop__banner-picter {
     position: absolute;
-    left: -0.03%;
-    right: -64.88%;
+    left: -7%;
     z-index: -1;
-    margin-top: 19px;
+    margin-top: -16px;
+    width: 982px;
   }
   .shop__banner-info {
     padding-left: 26px;
+  }
+  .shop__banner-title {
+    margin-bottom: 2px;
+  }
+  .shop__banner-text {
+    margin-bottom: 39px;
+  }
+  .shop__banner-icons {
+    min-width: 442px;
+    margin-top: -17px;
+  }
+  .shop__banner-picters {
+    min-height: 624px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 270px;
+    max-width: 320px;
   }
   .navbar-wrapper {
-    margin-left: 0;
-    padding-top: 18px;
+    width: 280px;
+    padding: 18px 5px;
+  }
+  .shop__banner {
+    max-width: 320px;
+    border-radius: 0;
+  }
+  .shop__banner-picter {
+    position: absolute;
+    left: -144%;
+    right: 0;
+    z-index: -1;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    width: 937px;
+    top: 12px;
+  }
+  .shop__banner-picters {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shop__banner-cool {
+    margin-top: 380px;
+    margin-left: -27px;
+    padding: 1px 27px;
+    margin-bottom: -14px;
+  }
+  .shop__banner-title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .shop__banner-text {
+    max-width: 280px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .shop-button {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: -24px;
+    padding: 12px 49px;
+  }
+  .shop__banner-picters {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9));
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%);
+  }
+  .shop__banner-icons {
+    min-width: 275px;
+    margin-top: -34px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-evenly;
+    margin-left: -28px;
+  }
+  .shop__banner-icon-li {
+    padding-bottom: 14px;
+  }
+  .online-pay {
+    width: 24px;
+    height: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
